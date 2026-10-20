@@ -1,0 +1,35 @@
+---
+layout: default
+title : Publications
+navbar_title: Publications
+---
+
+{% assign first_author_pubs = site.publications | where: "category", "first_author" | sort: "date" | reverse %}
+{% assign collaborative_pubs = site.publications | where: "category", "collaborative" | sort: "date" | reverse %}
+{% assign technical_reports = site.publications | where: "category", "technical_report" | sort: "date" | reverse %}
+
+<div class="row">
+    <div class="col-12">
+        <h2 class="pt-4" id="first-author">First-Author &amp; Co-First-Author Work</h2>
+        <p class="publication-section-note">Journal articles, proceedings papers, and conference abstracts are listed together in reverse chronological order.</p>
+        <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+            {% for item in first_author_pubs %}
+            {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+            {% endfor %}
+        </div>
+
+        <h2 class="pt-5" id="collaborative">Collaborative Work</h2>
+        <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+            {% for item in collaborative_pubs %}
+            {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+            {% endfor %}
+        </div>
+
+        <h2 class="pt-5" id="technical-reports">Technical Reports</h2>
+        <div class="my-0 mb-5 p-0 bg-white shadow-sm rounded-xl">
+            {% for item in technical_reports %}
+            {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
