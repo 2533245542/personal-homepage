@@ -1,5 +1,5 @@
 pages:
-- name: Home
+- name: 主页 / Home
   url: /
-- name: Publications
+- name: 文章发表 / Publications
   url: /publications

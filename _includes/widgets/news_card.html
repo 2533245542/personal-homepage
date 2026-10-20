@@ -12,7 +12,7 @@
                 <div class="my-2 d-flex align-items-start">
                     <span class="mr-2" aria-hidden="true">•</span>
                     <div class="mr-3">{{ item.title }}</div>
-                    <div class="ml-auto mt-auto text-muted no-break"><i>{{ item.date | date: "%m月" }}</i></div>
+                    <div class="ml-auto align-self-center text-muted no-break"><i>{{ item.date | date: "%-m月" }}</i></div>
                 </div>
                 {% endfor %}
             </div>
