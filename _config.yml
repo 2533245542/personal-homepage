@@ -17,6 +17,7 @@ title: "周伟鹏 | Weipeng Zhou"
 description: "周伟鹏的个人学术主页 / Academic homepage of Weipeng Zhou"
 url: "https://2533245542.github.io"
 baseurl: "/personal-homepage"
+google_analytics: "G-0SWKZFK7YY"
 
 # Build settings
 markdown: kramdown
