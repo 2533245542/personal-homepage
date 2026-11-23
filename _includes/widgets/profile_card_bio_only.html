@@ -14,8 +14,8 @@
                             {{ site.data.profile.short_bio }}
                             {% if site.data.profile.recruitment_notice %}
                             <div class="recruitment-notice mt-3">
-                                {{ site.data.profile.recruitment_notice }}
-                                <p class="mt-2 mb-0"><a href="{{ '/prospective-students' | relative_url }}">招生须知</a></p>
+                                <p class="mb-2">{{ site.data.profile.recruitment_notice }}，详情请参考<a href="{{ '/prospective-students' | relative_url }}">招生须知</a>。</p>
+                                <p class="mb-0">{{ site.data.profile.recruitment_notice_en }}</p>
                             </div>
                             {% endif %}
                         </div>
