@@ -3,3 +3,5 @@ pages:
   url: /
 - name: 文章发表 / Publications
   url: /publications
+- name: 招生须知 / Prospective Students
+  url: /prospective-students

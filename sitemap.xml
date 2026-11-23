@@ -10,4 +10,7 @@ permalink: /sitemap.xml
   <url>
     <loc>{{ '/publications' | absolute_url | xml_escape }}</loc>
   </url>
+  <url>
+    <loc>{{ '/prospective-students' | absolute_url | xml_escape }}</loc>
+  </url>
 </urlset>
